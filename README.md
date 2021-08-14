@@ -1,12 +1,9 @@
-# 云开发 quickstart
+# 校园寻物小程序--“丢啦”
+   这款小程序主要是为了解决在校大学生丢东西没有寻找的平台和途径的问题。
+   小程序前端使用了少量的VantUI美化✨，后端主要利用腾讯云开发技术，使用云数据库，云函数等内容🚀。
+    
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+## 参考文档📚
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
-
-## 参考文档
-
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+- [腾讯云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
