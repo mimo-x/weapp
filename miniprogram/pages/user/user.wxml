@@ -1,0 +1,86 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{username}}" class="inf">
+      <view class="userimgbox">
+        <image src="{{userimg}}" class="userimg" mode="aspectFit"></image>
+      </view>
+
+      
+
+
+
+<!-- 折叠筐 -->
+      <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+      <van-collapse-item title="我的信息" name="1">
+            <view class="username">昵称：{{username}}</view>
+            <view class="username">性别：{{userxingbie}}</view>
+            <view class="username" >故乡：{{useraddress}}</view>
+      </van-collapse-item>
+      <van-collapse-item title="平台规则" name="2">
+      如果因该平台提供的信息发生的任何纠纷，该平台不承担一切法律责任！
+      </van-collapse-item>
+
+
+      <van-collapse-item title="关于我们" name="3">
+                  <view style="margin-top:200rpx;" hidden="false">
+                  <van-divider
+                  contentPosition="center"
+                  customStyle="color: #B9E35C; border-color: #B9E35C; font-size: 18px;"
+                  >
+                  联系我们
+                  </van-divider>
+            </view>
+            <view style="margin-top:20rpx;margin-bottom:20rpx;">来自河南师范大学mimo团队</view>
+            <view class="contact" >
+                  <view class="developer">
+                        <view class="devimgbox">
+                              <image src="{{devimg.mimo}}" class="devimg" mode="aspectFit"></image>
+                        </view>
+                        <view class="devname">mimo</view>
+                  </view>
+
+                  <view class="developer">
+                        <view class="devimgbox">
+                              <image src="{{devimg.lucy}}" class="devimg" mode="aspectFit"></image>
+                        </view>
+                        <view class="devname">Lucy</view>
+                  </view>
+
+                  <view class="developer">
+                        <view class="devimgbox">
+                              <image src="{{devimg.xiaolei}}" class="devimg" mode="aspectFit"></image>
+                        </view>
+                        <text class="devname">小雷</text>
+                  </view>
+            </view>
+            <view style="margin-top:40rpx" >
+                  <view class="devname" style="margin-top:40rpx">mimo🐧:<text user-select="true">734532469</text></view>
+                  <view class="devname" style="margin-top:40rpx"> LUcy🚀: <text user-select="true">
+                        1113282049
+                  </text>   </view>
+                  <view class="devname" style="margin-top:40rpx;margin-bottom:50rpx;">小雷🎈:
+                       <text user-select="true">
+                             3020843049
+                       </text> </view>
+            </view>
+            </van-collapse-item>
+
+
+            
+            </van-collapse>
+
+
+
+
+
+
+
+
+
+</view>
+
+<view wx:else class="getuserinfo">
+
+      <button  bindtap="getuserinfo" type="primary" class="shouquandenglu">授权登陆</button>
+
+</view>
+

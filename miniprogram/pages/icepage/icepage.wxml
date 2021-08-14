@@ -1,0 +1,27 @@
+<view class="toptxt">
+    <text>丢啦</text>
+    <navigator url="/pages/search/search"><image src="/images/sousuo.png" mode="aspectFit"></image></navigator>
+</view>
+<view class="topbox " >
+    <navigator class="box1"url="/pages/shouye2/shouye2">
+        快来找一找吧😊
+    </navigator>
+    <navigator class="box1 box2" url="/pages/ceshi/ceshi" open-type="switchTab">
+        我捡到东西啦  🎈
+    </navigator>    
+</view>
+<view class="toptxt midtxt" >
+    小丢推荐
+</view>
+
+
+<view class="bankuai">
+    <view class="kapina" wx:for="{{kapian}}" wx:key="index">
+        <image src="{{item.img}}" mode="aspectFit"></image>
+        <view class="inf"><text class="name">{{item.name}}：</text><text class="number">{{item.number}}</text></view>
+        <navigator class="button" url="{{item.page}}">查看</navigator>
+
+    </view>
+</view>
+
+

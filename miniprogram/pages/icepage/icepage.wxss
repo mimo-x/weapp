@@ -1,0 +1,112 @@
+/* pages/icepage/icepage.wxss */
+page{
+        background-color: #F1F9FC;
+}
+.toptxt{
+        font-size: 200%;
+        font-weight: 900;
+        letter-spacing: 6rpx;
+        padding: 10rpx;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+}
+.toptxt text{
+        margin-left: 10rpx;
+
+}
+.toptxt image{
+        width: 60rpx;
+        height: 60rpx;
+        margin: 15rpx;
+}
+
+.topbox{
+        /* border: black 1rpx solid; */
+        height: 220rpx;
+        display: flex;
+        background-color: white;
+}
+.box1{
+        /* border: steelblue solid 1rpx; */
+        margin-top: 10rpx;
+        height: 160rpx;
+        width: 280rpx;
+        margin-left: 40rpx;
+        background-image:linear-gradient(to bottom right, #16BBFB, #82F8F8) ;
+        border-radius: 30rpx;
+        padding: 20rpx;
+        font-size: larger;
+        color: white;
+        font-weight: 900;
+        letter-spacing: 5rpx;
+        /* text-align: center;
+        line-height: 100rpx; */
+        
+}
+.box2{
+    background-image:linear-gradient(to bottom right, #0FE0B7, #A1F3F1);
+    
+}
+
+.kapian-box{
+        background-color: #F1F9FC;
+        margin-top: 20rpx;
+        height: 320rpx;
+        padding-top: 20rpx;
+        display: flex;
+        white-space: nowrap;
+}
+.kapina{
+        background-color: white;
+        width: 300rpx;
+        height: 350rpx;
+        border-radius: 30rpx;
+        margin-left: 20rpx;
+        display: inline-block;
+        /* display: flex; */
+        text-align: center;
+        font-weight: bold;
+        margin: 40rpx;
+        margin-left: 30rpx;
+}
+
+.midtxt{
+        font-size: 100%;
+        margin-left: 20rpx;
+}
+
+.kapina image{
+        margin-top: 30rpx;
+        width: 100rpx;
+        height: 100rpx;
+}
+.inf{
+    margin-top: 15rpx;
+    margin-bottom: 35rpx;
+}
+.name{
+    color: #C7C7C7;
+}
+.number{
+    color: #10B0FC;
+}
+
+.button{
+        width: 200rpx;
+        height: 45rpx;
+        text-align: center;
+        padding-top:6rpx ;
+        /* margin-top: 50rpx; */
+        border-radius: 30rpx;
+        color: white;
+        background-color: #0EB7FA;
+        margin:0 auto;
+        letter-spacing: 10rpx;
+        font-weight: 200;
+}
+.bankuai{
+        background-color: #F1F9FC;
+        height: 800rpx;
+        /* border: solid red 1rpx; */
+}

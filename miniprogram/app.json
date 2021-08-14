@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/icepage/icepage" ,
+    "pages/shouye2/shouye2",
+    "pages/find-goods/find-goods",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/ceshi/ceshi",
+    "pages/liebiao/liebiao",
+    "pages/yaoshi/yaoshi",
+    "pages/shu/shu",
+    "pages/ka/ka",
+    "pages/test/test"
+
+
+
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/icepage/icepage",
+        "text": "首页",
+        "iconPath": "/images/icon/zhuye-first.png",
+        "selectedIconPath": "/images/shouye.png"
+      },
+      {
+        "pagePath": "pages/ceshi/ceshi",
+        "text": "发布",
+        "iconPath": "/images/ice/fabuhuise.png",
+        "selectedIconPath": "/images/ice/fabulanse.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/icon/me-first.png",
+        "selectedIconPath": "/images/wode.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "丢 啦",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+    
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-circle": "@vant/weapp/circle/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-empty": "@vant/weapp/empty/index",
+
+    "van-divider": "@vant/weapp/divider/index"
+  }
+}

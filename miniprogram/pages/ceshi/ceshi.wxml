@@ -1,0 +1,51 @@
+<image src="{{imgurl}}" bindtap="yulan" mode="Fitfix" hidden="true"></image>
+
+<view class="topbox">
+    <image src="/images/guagou.png" mode="scaleToFill"></image>
+</view>
+<view class="heiban">
+    <view class="heibantitle">{{leixing}}</view>
+    <form bindsubmit="addform1">
+        <!-- <input type="text"> -->
+        <view class="shurukuang">
+            <text decode="true" >&nbsp;&nbsp;&nbsp;物品信息:</text>
+            <textarea type="text" 
+                        maxlength='-1'
+                        class="wupinmiaoshu" 
+                        auto-height="true"
+                        placeholder-class="placeholder-class" 
+                        bindblur='wanchengshuru'
+                        name="information" value="{{information}}">
+            </textarea>
+            <text decode="true" >&nbsp;&nbsp;&nbsp;物品类型:</text>
+            <textarea type="text" 
+                        maxlength='-1'
+                        class="wupinmiaoshu wupinmiaoshu2" 
+                        auto-height="true"
+                        placeholder-class="placeholder-class" 
+                        bindblur='wanchengshuru'
+                        name="name" value="{{goodsname}}">
+            </textarea>
+            <text decode="true" >&nbsp;&nbsp;&nbsp;联系方式:</text>
+            <textarea type="text" 
+                        maxlength='-1'
+                        class="wupinmiaoshu wupinmiaoshu2" 
+                        auto-height="true"
+                        placeholder-class="placeholder-class" 
+                        bindblur='wanchengshuru'
+                       
+                        name="qq" value="{{qq}}">
+            </textarea>
+
+        </view>
+        <!-- <van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;" hidden="ture">📷</van-divider> -->
+        <van-uploader file-list="{{ fileList }}" bind:delete="del" bind:after-read="imgsrc" multiple="true"/>
+        <view class="from-button-box">
+            <van-button round type="info"  form-type="submit" >  发  布  🔈</van-button>
+            <van-button round type="warning"
+            form-type="reset">清 空 ✈</van-button>
+        </view>
+
+        
+    </form>
+</view>

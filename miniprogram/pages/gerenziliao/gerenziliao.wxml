@@ -1,0 +1,27 @@
+<image src="{{imgurl}}" bindtap="yulan" mode="Fitfix" hidden="true"></image>
+
+<view class="topbox">
+    <image src="/images/guagou.png" mode="scaleToFill"></image>
+</view>
+<view class="heiban">
+    <view class="heibantitle">启示</view>
+    <view id="userinf">
+            <view id="userimg"><image src="{{userimg}}"></image></view>
+            <view id="username">{{username}}</view>
+    </view>
+    <text>{{goodsinf}}</text>
+    <view id="qq">
+        <text user-select="true">qq:{{qq}}</text>
+    </view>
+</view>
+<view class="imgprebox">
+			<scroll-view class="imgbox" scroll-x="true">
+						<view class="txtimg" wx:for="{{goodsimgurl}}" wx:key="index">
+
+						<image src="{{item}}" mode="aspectFill" class="neirongimg" bindtap="preview">
+						</image>
+
+                        </view>
+             </scroll-view>
+
+</view>

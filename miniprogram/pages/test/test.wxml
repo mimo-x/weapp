@@ -1,0 +1,10 @@
+<!--pages/test/test.wxml-->
+
+<form bindsubmit="tijiao">
+        <input type="text" placeholder="username" name="username"></input>
+        <input type="password" placeholder="password" name="password"></input>
+        <button form-type="submit" >提交</button>
+</form>
+
+<view>你输入的姓名是：{{username}}</view>
+<view>你输入的密码是：{{password}}</view>

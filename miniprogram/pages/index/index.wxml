@@ -1,0 +1,16 @@
+<!-- <view>
+  <button bindtap="getUserProfile">登录</button>
+  <view>{{name}}</view>
+  <image src="{{image}}"></image>
+</view>
+<view>
+  <button bindtap="getopenip" type="primary"> 获取用户唯一标识</button>
+</view> -->
+
+<button bindtap="addimg" > 添加图片</button>
+<button bindtap="getappdata"> 获取全局变量</button>
+<view>{{name}}</view>
+<van-uploader file-list="{{ fileList }}" bind:delete="del" bind:after-read="imgsrc" multiple="true"/>
+<button bindtap="addimgs">添加图片</button>
+
+

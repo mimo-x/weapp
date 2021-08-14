@@ -1,0 +1,70 @@
+/* pages/user/user.wxss */
+.inf{
+            text-align: center;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+}
+.userimgbox{
+  margin-top: 100rpx;
+  margin-bottom: 150rpx;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100rpx;
+  height: 100rpx;
+  /* border: 1rpx solid hotpink ; */
+  position: relative;
+}
+.userimg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.username{
+          margin-top: 30rpx;
+          font-size: large;
+          font-weight: bold;
+          
+}
+
+.getuserinfo{
+            margin-top: 500rpx;
+            
+}
+.shouquandenglu{
+            width: 200rpx;
+            height: 100rpx;
+}
+.contact{
+        /* 包含三个开发者 */
+        width: 100%;
+        height: 150rpx;
+         /* border: 1rpx solid red; */
+         display: flex;
+         justify-content: center;
+
+}
+.developer{
+  /* 每一个开发者的盒子 */
+      width: 150rpx;
+      height: 150rpx;
+      /* border: 1rpx solid black; */
+      display: flex;
+      flex-direction:column;
+      margin-left: 10rpx;
+
+}
+.devimg{
+      /* 开发者头像 */
+      /* border: 1rpx solid black; */
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 50%;
+
+}
+.devname{
+  /* border: 1rpx solid black; */
+  font-weight: bolder;
+      
+}

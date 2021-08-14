@@ -1,0 +1,47 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/shouye2/shouye2",
+                    "pathName": "pages/shouye2/shouye2",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/gerenziliao/gerenziliao",
+                    "pathName": "pages/gerenziliao/gerenziliao",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/user/user",
+                    "pathName": "pages/user/user",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/test/test",
+                    "pathName": "pages/test/test",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

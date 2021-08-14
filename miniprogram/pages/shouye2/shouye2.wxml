@@ -1,0 +1,98 @@
+<!-- 
+<view class="daohang">
+	<navigator wx:for="{{daohang}}" class="zhuti">{{item}}</navigator>
+</view>
+
+<view class="">
+	
+</view> -->
+<!-- 触控变化   四个模块的操作栏 -->
+<!-- <scroll-view scroll-x="true">
+  <view class="scroll-x">
+    <view wx:for-items="{{scrolls}}" wx:key="name">
+      <navigator class="view {{index==idx?'_left':'left'}}" data-index="{{index}}" bindtap="goIndex">{{item}}</navigator>
+    </view>
+  </view>
+</scroll-view> -->
+
+
+
+
+
+<!-- 搜索模块 -->
+<view >
+		<van-search
+		value="{{ value }}"
+		shape="round"
+		background="#46D6FA"
+		placeholder="请输入搜索关键词"
+		use-action-slot
+		bind:change="onChange"
+		bind:search="onSearch"
+		bind:focus="navigateTo"
+
+		>
+		<view slot="action" bind:tap="onClick"><navigator url=""> 搜索</navigator></view>
+		</van-search>
+
+</view>
+<!-- <text style="font-size:150%;font-weight:900;letter-spacing:7px;" decode> &nbsp;&nbsp;小丢推荐</text> -->
+
+<!-- 内容 -->
+
+<!-- <scroll-view scroll-y="true" class="inforbox" bindscrolltolower="touchEndRefresh">
+        <view class="tiezi" wx:for="{{datalist}}" wx:key="index">
+            <view class="usertop">
+              <navigator class="touxiangbox" url="/pages/fabuzhe/fabuzhe"><image class="touxiang" src='{{item.userimg}}' mode="aspectFit"></image></navigator>
+              <view class="username">{{item.username}}</view>
+            </view>
+            
+              <navigator class="neirong" url="/pages/goodsinf/goodsinf">
+                <view class="txtimg"><image src="{{item.goodsimgurl[0]}}" mode="aspectFit" class="neirongimg"></image></view>
+                <text class="txt">    {{item.information}}</text>        
+              </navigator>
+          <view class="time">{{item.fabutime}}</view>
+
+        </view>
+</scroll-view> -->
+
+<scroll-view scroll-y="true" class="inforbox" bindscrolltolower="touchEndRefresh">
+        <view class="tiezi" wx:for="{{datalist}}" wx:key="index">
+            <view class="usertop">
+              <view class="touxiangbox" url="/pages/fabuzhe/fabuzhe"><image class="touxiang" src='{{item.userimg}}' mode="aspectFit"></image></view>
+              <view class="username">{{item.username}}</view>
+        </view>
+            <!-- ----------页面间传递数据--------------------------------------------- -->
+              <view class="neirong" bindtap="detail"  
+              data-username="{{item.username}}"
+              data-time="{{item.fabutime}}"
+              data-userimg="{{item.userimg}}"
+              data-goodsinf="{{item.information}}"
+              data-userxingbie="{{item.userxingbie}}"
+              data-goodsimgurl="{{item.goodsimgurl}}"
+              data-qq="{{item.qq}}"
+              data-pretime="{{item.pretime}}"
+			  >
+			  <view class="txtbox">
+				<view class="txt" >    {{item.information}}</view>    
+			  </view>
+
+
+		<view class="imgprebox">
+			<scroll-view class="imgbox" scroll-x="true">
+						<view class="txtimg" wx:for="{{item.goodsimgurl}}" wx:key="index">
+
+						<image src="{{item}}" mode="aspectFill" class="neirongimg">
+						</image>
+
+	          	</view>
+
+      </scroll-view>
+
+</view>
+              </view>
+          <view class="time" >{{item.pretime}}</view>
+        </view>
+</scroll-view>
+
+

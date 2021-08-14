@@ -1,0 +1,42 @@
+
+<form bindsubmit="addform1">
+
+        <view style="height:50rpx;text-align:center;margin-top:20rpx">众里寻它千百度🚀</view>
+        
+        <view>{{goodsid}}</view>
+        <view class="input-row">
+            <view class="input-name">物品类型</view>
+            <input type="text" placeholder="寻/丢物品类型" class="find-goods-input" name="name" value="{{goodsname}}"></input>
+        </view>
+        <!-- <view class="input-row">
+            <view class="input-name">时间</view>
+            <input type="text" placeholder="物品丢失或者捡到的时间" class="find-goods-input" name="date" value="{{goodsdate}}"></input>
+        </view>
+        <view class="input-row">
+            <view class="input-name">失主姓名</view>
+            <input type="text" placeholder="物品上的名字" class="find-goods-input" name="findpeoplename" value="{{findpeoplename}}"></input>
+        </view>
+        <view class="input-row">
+            <view class="input-name">失主学号</view>
+            <input type="text" placeholder="物品上的名字" class="find-goods-input" name="findpeoplenumber" value="{{findpeoplenumber}}"></input>
+        </view> -->
+        <view class="input-row">
+            <view class="input-name">描述</view>
+            <input type="text" placeholder="描述下物品特征" class="find-goods-input" name="information" value="{{information}}"></input>
+        </view>
+        <view class="input-row">
+            <view class="input-name">你的🐧号</view>
+            <input type="text" placeholder="留下你的联系方式吧" class="find-goods-input" name="qq" value="{{qq}}"></input>
+        </view>
+        <van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;">📷</van-divider>
+
+        <van-uploader file-list="{{ fileList }}" bind:delete="del" bind:after-read="imgsrc" multiple="true"/>
+
+        
+        <!-- <button bindtap="addimgs">添加图片</button> -->
+        <view class="from-button-box">
+            <button form-type="submit" type="primary" class="from-button-1">发布</button>
+            <button form-type="reset" type="warn" class="from-button-2">清空</button>
+        </view>
+</form>
+<view wx:for="{{imglist}}" wx:key="index"><image src="{{item}}"></image></view>

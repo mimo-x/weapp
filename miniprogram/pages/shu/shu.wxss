@@ -1,0 +1,172 @@
+/* pages/yaoshi/yaoshi.wxss *//* pages/shouye2/shouye2.wxss */
+#one{
+        font-weight: 900;
+        font-size: 150%;
+        letter-spacing: 5rpx;
+        padding-left: 10rpx;
+        
+}
+page{
+    /* background-color: rgb(227, 229, 233); */
+    
+  }
+  .daohang{
+          display: flex;
+          /* border: 1rpx solid rebeccapurple; */
+          
+          justify-content: space-around;
+          height: 100rpx;
+          text-align: center;
+          background-color: white;
+          margin-top: 20rpx;
+          
+  }
+  .zhuti{
+          /* border: 1rpx solid red; */
+          text-align: center;
+          padding-top: 20rpx;
+          font-size: 40rpx;
+  }
+  .scroll-x {
+      /* border: 1rpx solid rebeccapurple; */
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      height: 110rpx;
+          text-align: center;
+          background-color: white;
+          /* margin-top: 20rpx; */
+          /* border-radius: 10%; */
+    }
+    .view {
+      /* width: 200px; */
+      text-align: center;
+      padding-top: 20rpx;
+    }
+    .active,._left{
+      /* color: rgb(88, 194, 236); */
+      color: #42A5F5;
+      /* background-color: #000; */
+      font-size: 40rpx;
+      /* border-bottom:1px solid red; */
+      /* padding-bottom: 10rpx; */
+      font-weight: 1000;
+      }
+      
+      /* 帖子 */
+  .inforbox{
+               /* margin-top: 20rpx; */
+              /* border-bottom:2px solid red; */
+  
+              width: 100%;
+              height: 2000rpx;
+  }
+  .tiezi{
+          margin: 25rpx;
+          width: 92%;
+          height: 500rpx;
+          background-color: white;
+          border-radius: 20rpx;
+          position: absoulte;
+          box-shadow:0px 0px 10px #888888;
+          
+          
+  }
+  .usertop{
+          display: flex;
+  }
+  .touxiangbox{
+              margin-top: 20rpx;
+              border-radius: 50%;
+              margin-left: 20rpx;
+              width: 90rpx;
+              height: 90rpx;
+              /* border: 1rpx solid hotpink ; */
+              position: relative;
+  }
+  .touxiang{
+              width: 90rpx;
+              height: 90rpx;
+              border-radius: 50%;
+  }
+  .username{
+              /* border: 1rpx solid blue; */
+              height: 70rpx;
+              margin-top: 20rpx;
+              margin-left: 20rpx;
+              /* text-align: center; */
+              padding-top: 20rpx;
+              padding-left: 20rpx;
+              width: 70%;
+              color: skyblue;
+              font-weight: 900;
+              font-size: larger;
+  
+  }
+  .neirong{
+              /* border: 1rpx solid red; */
+              border-radius: 30rpx;
+              width: 90%;
+              height: 250rpx;
+              margin: 20rpx;
+              margin-left: 30rpx;
+              /* background-color: rgb(227, 229, 233); */
+              display: flex;
+              flex-direction: column;
+              /* justify-content: space-between; */
+              
+              
+  }
+  .txtimg{
+  
+              width: 180rpx;
+              height: 150rpx;
+              margin: 30rpx;
+              /* border: 1rpx solid black; */
+              border-radius: 20rpx;
+              display: inline-block;
+              flex-wrap: nowrap;
+  
+  }
+  .imgprebox{
+          /*  */
+          height: 100rpx;
+  }
+  
+  .imgbox{
+      /* 横向滑动scrooll-view  外框*/
+          height: 200rpx;
+          width: 100%;
+          white-space: nowrap;
+          
+  }
+  .txtbox{
+          height: 100rpx;
+  }
+  .txt{
+              overflow: hidden;
+              word-wrap:break-word;
+              white-space:pre-wrap;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 4;	
+              height: 200rpx;
+              letter-spacing: 4rpx;
+              font-weight: 900;
+              font-size: small;
+              /* border: 1rpx solid red; */
+          }
+  .neirongimg{
+      width: 180rpx;
+      height: 150rpx;
+      border-radius: 20rpx;
+  }
+  .time{
+      /* border: 1rpx solid red; */
+      text-align: right;
+      padding-right: 50rpx;
+      padding-top: 55rpx;
+      color: rgba(174, 174, 175, 0.856);
+  }

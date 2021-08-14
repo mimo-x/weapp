@@ -1,0 +1,16 @@
+/* pages/liebiao/liebiao.wxss */
+/* page{
+        background-color: #e6e1e1ee ;
+} */
+.title{
+        letter-spacing: 10rpx;
+        font-size: 150%;
+        font-weight: 900;
+        padding-top: 20rpx;
+        padding-left: 20rpx;
+}
+.box-1{
+        border: solid 1rpx red;
+        height: 280rpx;
+        margin-top: 20rpx;
+}
